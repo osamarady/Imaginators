@@ -19,32 +19,35 @@ body, html {
 
 .main-btn {
   background: #F22D64;
-  background: -webkit-linear-gradient(to right, #F22D64, #f85d3a);
+  background: -webkit-gradient(linear, left top, right top, from(#F22D64), to(#f85d3a));
   background: linear-gradient(to right, #F22D64, #f85d3a);
   color: #fff;
   border-radius: 30px;
   border: none;
   -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer; }
   .main-btn:hover {
-    box-shadow: 1px 20px 20px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 1px 20px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 20px 20px rgba(0, 0, 0, 0.3); }
 
 .header {
   background: #f38181;
-  background: -webkit-linear-gradient(to right, #1a1a28, #47477f);
+  background: -webkit-gradient(linear, left top, right top, from(#1a1a28), to(#47477f));
   background: linear-gradient(to right, #1a1a28, #47477f); }
 
 /* Start Header */
 .header {
-  transform: skew(0deg, -5deg) translateY(-120px);
+  -webkit-transform: skew(0deg, -5deg) translateY(-120px);
+          transform: skew(0deg, -5deg) translateY(-120px);
   position: relative;
   overflow: hidden; }
   .header .container {
-    transform: skew(0deg, 5deg); }
+    -webkit-transform: skew(0deg, 5deg);
+            transform: skew(0deg, 5deg); }
     .header .container .cont-height {
-      transform: translateY(120px); }
+      -webkit-transform: translateY(120px);
+              transform: translateY(120px); }
       .header .container .cont-height .navbar-nav {
         font-size: .8rem; }
         .header .container .cont-height .navbar-nav .nav-link {
@@ -64,20 +67,8 @@ body, html {
         right: -80px;
         z-index: -1;
         -webkit-animation: img-mov 15s ease-in-out infinite forwards;
-        -moz-animation: img-mov 15s ease-in-out infinite forwards;
-        -o-animation: img-mov 15s ease-in-out infinite forwards;
         animation: img-mov 15s ease-in-out infinite forwards; }
 @-webkit-keyframes img-mov {
-  0%, 100% {
-    bottom: 140px; }
-  50% {
-    bottom: 200px; } }
-@-moz-keyframes img-mov {
-  0%, 100% {
-    bottom: 140px; }
-  50% {
-    bottom: 200px; } }
-@-o-keyframes img-mov {
   0%, 100% {
     bottom: 140px; }
   50% {
@@ -96,9 +87,15 @@ body, html {
         margin-bottom: 0;
         color: #b6b4b4; }
     .header .container .content {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .header .container .content h2 {
         font-size: 3em; }
       .header .container .content p {
@@ -114,10 +111,10 @@ body, html {
 .description .card {
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   .description .card:hover {
-    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.3); }
   .description .card .card-profile {
     position: absolute;
     top: 50%;
@@ -136,12 +133,13 @@ body, html {
   border: 1px solid #efeded;
   padding: 50px 30px 100px;
   position: relative;
-  box-shadow: 1px 10px 40px #c1c1c1; }
+  -webkit-box-shadow: 1px 10px 40px #c1c1c1;
+          box-shadow: 1px 10px 40px #c1c1c1; }
   .products .product img {
     display: block; }
   .products .product a {
     background: #F22D64;
-    background: -webkit-linear-gradient(to right, #F22D64, #f85d3a);
+    background: -webkit-gradient(linear, left top, right top, from(#F22D64), to(#f85d3a));
     background: linear-gradient(to right, #F22D64, #f85d3a);
     width: 100%;
     height: 50px;
@@ -189,7 +187,7 @@ body, html {
           top: 35px;
           left: -150px;
           background: #F22D64;
-          background: -webkit-linear-gradient(to right, #F22D64, #f85d3a);
+          background: -webkit-gradient(linear, left top, right top, from(#F22D64), to(#f85d3a));
           background: linear-gradient(to right, #F22D64, #f85d3a);
           width: 100px;
           height: 30px;
@@ -205,7 +203,7 @@ body, html {
           top: 35px;
           right: -150px;
           background: #F22D64;
-          background: -webkit-linear-gradient(to right, #F22D64, #f85d3a);
+          background: -webkit-gradient(linear, left top, right top, from(#F22D64), to(#f85d3a));
           background: linear-gradient(to right, #F22D64, #f85d3a);
           width: 100px;
           height: 30px;
@@ -230,7 +228,7 @@ body, html {
       top: 28px !important;
       left: 20px !important;
       background: #F22D64;
-      background: -webkit-linear-gradient(to right, #F22D64, #f85d3a);
+      background: -webkit-gradient(linear, left top, right top, from(#F22D64), to(#f85d3a));
       background: linear-gradient(to right, #F22D64, #f85d3a);
       width: 100px;
       height: 30px;
@@ -252,7 +250,6 @@ body, html {
   background-size: cover;
   background-position: center;
   -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   .team .col-md-4 .team-member .overlay {
     width: 100%;
@@ -262,12 +259,18 @@ body, html {
     left: 0;
     border-radius: 20px 20px 0 0;
     background: #F22D64;
-    background: -webkit-linear-gradient(to right, rgba(242, 46, 100, 0.8), rgba(248, 92, 59, 0.8));
+    background: -webkit-gradient(linear, left top, right top, from(rgba(242, 46, 100, 0.8)), to(rgba(248, 92, 59, 0.8)));
     background: linear-gradient(to right, rgba(242, 46, 100, 0.8), rgba(248, 92, 59, 0.8));
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 30px;
     overflow: hidden; }
     .team .col-md-4 .team-member .overlay span {
@@ -275,7 +278,8 @@ body, html {
     .team .col-md-4 .team-member .overlay a {
       margin-right: 20px; }
   .team .col-md-4 .team-member:hover {
-    box-shadow: 1px 10px 40px #c1c1c1; }
+    -webkit-box-shadow: 1px 10px 40px #c1c1c1;
+            box-shadow: 1px 10px 40px #c1c1c1; }
 
 .team .col-md-4 .team-member .overlay:before {
   content: "";
@@ -287,12 +291,16 @@ body, html {
   top: 0;
   left: 0;
   opacity: .5s;
-  filter: blur(25px);
-  transform: translateX(-130px) skewX(-15deg);
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+  -webkit-transform: translateX(-130px) skewX(-15deg);
+          transform: translateX(-130px) skewX(-15deg);
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
 .team .col-md-4 .team-member .overlay:hover:before {
   opacity: 1s;
-  transform: translateX(400px) skewX(-15deg); }
+  -webkit-transform: translateX(400px) skewX(-15deg);
+          transform: translateX(400px) skewX(-15deg); }
 
 /* Footer */
 footer {
